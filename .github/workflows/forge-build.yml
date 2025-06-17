@@ -26,6 +26,9 @@ jobs:
     - name: Build mod with Gradle
       run: ./gradlew build
 
+    - name: List build/libs contents
+      run: ls -l build/libs
+
     - name: Upload Mod Artifact
       uses: actions/upload-artifact@v4
       with:
