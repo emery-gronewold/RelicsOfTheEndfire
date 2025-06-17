@@ -39,7 +39,14 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
     options.release = 17
 }
+
+// Set the name and version of the output .jar
+jar {
+    archiveBaseName.set("RelicsOfTheEndfire")
+    archiveVersion.set("1.0.0")
+}
+
+// Ensure the reobfJar task is registered (Forge needs this)
 tasks.register('reobfJar') {
     dependsOn 'jar'
 }
-
