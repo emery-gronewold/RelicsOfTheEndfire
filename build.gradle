@@ -39,3 +39,7 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
     options.release = 17
 }
+tasks.register('reobfJar') {
+    dependsOn 'jar'
+}
+
