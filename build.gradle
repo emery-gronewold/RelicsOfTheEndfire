@@ -45,8 +45,3 @@ jar {
     archiveBaseName.set("RelicsOfTheEndfire")
     archiveVersion.set("1.0.0")
 }
-
-// Ensure the reobfJar task is registered (Forge needs this)
-tasks.register('reobfJar') {
-    dependsOn 'jar'
-}
