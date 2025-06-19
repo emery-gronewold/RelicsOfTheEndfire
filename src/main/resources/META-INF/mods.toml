@@ -1,18 +1,8 @@
 modLoader="javafml"
-loaderVersion="[47,)"
+loaderVersion="[56,)"
 license="MIT"
-
 [[mods]]
 modId="relics"
 version="1.0.0"
 displayName="Relics of the Endfire"
-description='''
-Adds mythic weapons, cursed totems, and deadly bosses to Minecraft.
-'''
-
-[[dependencies.relics]]
-    modId="forge"
-    mandatory=true
-    versionRange="[47,)"
-    ordering="NONE"
-    side="BOTH"
+description="Adds mythic weapons, cursed totems, and deadly bosses."
